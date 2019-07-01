@@ -26,7 +26,8 @@
         })
         , methods: {
             f: function () {
-                this.$router.push({path: '/hello'})
+                console.log(this.$store.state.count++)
+                // this.$router.push({path: '/hello'})
             }
         }
     }

@@ -1,6 +1,6 @@
 <template>
     <el-container>
-        <el-button type="primary" @click="f()">返回</el-button>
+        <el-button type="primary" @click="f()">返回{{aa}}</el-button>
         <el-table
                 :data="tableData"
                 style="width: 100%"
@@ -74,7 +74,8 @@
                     name: '王小虎',
                     address: '上海市普陀区金沙江路 1518 弄',
                     remark: '上海市普陀区金沙江路 1518 弄'
-                }]
+                }],
+                aa: this.$store.state.count
             }
         }
     }
